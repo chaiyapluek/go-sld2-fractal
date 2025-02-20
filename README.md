@@ -1,1 +1,1 @@
-![Alt text](relative%20img/image.png?raw=true "Title")
+![Alt text](img/image.png?raw=true "Title")
