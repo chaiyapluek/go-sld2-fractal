@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"math"
 	"slices"
 	"unsafe"
@@ -150,15 +149,6 @@ func edge_function(x, y int, e *edge) int {
 		}
 	}
 	return 0
-}
-
-func test(i, j int, e *edge) {
-	fmt.Printf("y: %v edge: %d", (j >= e.p1.y && j <= e.p2.y) || (j <= e.p1.y && j >= e.p2.y), edge_function(i, j, e))
-	if ((j >= e.p1.y && j <= e.p2.y) || (j <= e.p1.y && j >= e.p2.y)) && edge_function(i, j, e) <= 0 {
-		println("I'M LEFT")
-	} else {
-		println("DUNNO")
-	}
 }
 
 func Fill(x []float64, y []float64, c color, pixels []byte) {
